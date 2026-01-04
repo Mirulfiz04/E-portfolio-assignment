@@ -346,3 +346,83 @@ h1{margin:0 0 6px; font-size:36px}
   display:block;
 }
 
+/* ===== Academic Timeline Styles (ADD THIS) ===== */
+.timeline{
+  margin-top:16px;
+  display:grid;
+  gap:14px;
+}
+
+.tCard{
+  padding:16px;
+  cursor:pointer;
+  transition:.15s ease;
+}
+
+.tCard:hover{
+  transform: translateY(-2px);
+  border-color: rgba(6,182,212,.35);
+}
+
+.tTop{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.tPill{
+  display:inline-block;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(6,182,212,.10);
+  margin-bottom:8px;
+}
+
+:root[data-theme="light"] .tPill{
+  background: rgba(6,182,212,.16);
+  border-color: rgba(6,182,212,.30);
+  color:#065f73;
+}
+
+.tTitle{
+  margin:0;
+  font-size:18px;
+  line-height:1.35;
+}
+
+.tMeta{
+  margin:8px 0 0;
+  color:var(--muted);
+}
+
+.tToggle{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  color:var(--text);
+  cursor:pointer;
+  font-size:20px;
+  line-height:1;
+}
+
+:root[data-theme="light"] .tToggle{
+  background: rgba(0,0,0,.03);
+}
+
+.tMore{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+}
+
+.tList{
+  margin:0;
+  padding-left:18px;
+  color:var(--muted);
+  line-height:1.7;
+}
